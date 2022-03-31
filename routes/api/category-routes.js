@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
     // be sure to include its associated Products
     include: [Product]
   })
-  .then((category) => res.json(`Retrieved Category ${req.params.id} successfully`));
+  .then((category) => res.json(category));
 });
 
 router.post('/', (req, res) => {
