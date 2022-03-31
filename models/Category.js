@@ -8,10 +8,10 @@ Category.init(
   {
     // define columns
     id: {
-
+      type: DataTypes.
     },
     category_name: {
-
+      type: DataTypes.
     }
   },
   {

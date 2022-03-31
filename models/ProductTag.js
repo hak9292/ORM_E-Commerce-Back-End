@@ -8,13 +8,13 @@ ProductTag.init(
   {
     // define columns
     id: {
-
+      type: DataTypes.
     },
     product_id: {
-
+      type: DataTypes.
     },
     tag_id: {
-      
+      type: DataTypes.
     }
   },
   {
