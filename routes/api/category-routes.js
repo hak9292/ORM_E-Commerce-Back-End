@@ -29,7 +29,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   // create a new category
   Category.create(req.body)
-  .then((category) => res.json(`Created Category ${req.body}`))
+  .then((category) => res.json(category))
 });
 
 router.put('/:id', (req, res) => {
@@ -39,7 +39,7 @@ router.put('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then((category) => res.json(`Updated Category ${req.params.id} to Category ${category}`));
+  .then((category) => res.json(category));
 });
 // 
 router.delete('/:id', (req, res) => {
@@ -49,7 +49,7 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then((category) => res.json(`Deleted Category ${req.params.id}`));
+  .then((category) => res.json(category));
 });
 
 module.exports = router;
